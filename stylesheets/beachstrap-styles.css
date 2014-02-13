@@ -1,0 +1,509 @@
+/*
+Author: Mammoth-Interactive
+Description: Beachstrap theme styles
+Date: 31 October 2013 (Happy halloween!)
+*/
+/* Table of Contents
+==================================================
+
+	#GENERAL
+	#HEADER
+	#HERO
+	#WHAT IS PCAMP
+	#WHY PCAMP
+	#PARALLAX SECTION
+	#CTA SECTION
+	#GET INVOLVED
+	#FOOTER
+	#MEDIA QUERIES
+
+==================================================
+*/
+/* ==================== GENERAL ================== */
+body {
+  font-family: 'Oxygen', sans-serif;
+  height: 100%;
+  color: #3d505f; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Rokkitt', serif;
+  margin-bottom: 16px;
+  color: #3d505f;
+  font-weight: 400;
+  margin-bottom: 26px; }
+
+h1 {
+  font-size: 42px;
+  line-height: 52px; }
+
+h2 {
+  font-size: 38px;
+  line-height: 44px; }
+
+h3 {
+  font-size: 28px;
+  line-height: 28px; }
+
+p {
+  font-size: 15px;
+  line-height: 26px;
+  margin-bottom: 24px; }
+
+.form-control {
+  border-radius: 0;
+  border: 1px solid #ccc;
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+  padding: 20px;
+  box-sizing: border-box; }
+  .form-control:focus {
+    background-color: #eee;
+    box-shadow: none; }
+
+.btn-green, .btn-db {
+  color: #fff;
+  border-radius: 0;
+  padding: 10px;
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+  width: 100%; }
+
+.btn-green {
+  background-color: #8fc563; }
+  .btn-green:hover {
+    background-color: #75b342;
+    color: #fff; }
+
+.btn-db {
+  background-color: #3d505f; }
+  .btn-db:hover {
+    background-color: #293640;
+    color: #fff; }
+
+.sn-links a {
+  color: #3d505f;
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease; }
+  .sn-links a:hover {
+    color: #f1784d; }
+  .sn-links a .fa {
+    font-size: 32px;
+    margin: 5px; }
+
+/* ====================== HEADER ========================= */
+header {
+  background-color: rgba(21, 26, 40, 0.8);
+  min-height: 80px;
+  padding: 15px 0 0 0;
+  position: fixed;
+  z-index: 200;
+  width: 100%; }
+  header h1#logo {
+    margin: 0;
+    padding: 1px 0;
+    text-indent: -9999px;
+    background: url(../images/pcamp-logo-small.png) no-repeat 0 0; }
+
+nav ul.nav {
+  text-align: right;
+  padding-top: 10px;
+  font-size: 16px; }
+  nav ul.nav li {
+    display: inline;
+    margin: 0 20px; }
+    nav ul.nav li:last-child {
+      margin-right: 0; }
+    nav ul.nav li.active a {
+      color: #8fc563;
+      text-decoration: none; }
+nav a {
+  color: white;
+  font-weight: 700;
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  transition: background 0.5s ease; }
+  nav a:hover, nav a.active {
+    color: #8fc563;
+    text-decoration: none; }
+
+/* ====================== HERO ========================= */
+#hero {
+  background: url(../images/clt-skyline-cropped.jpg) 0 0 no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center top;
+  /* Internet Explorer 7/8 */
+  background-attachment: fixed;
+  /* border-bottom:100px solid rgba($color-green,0.85); */ }
+  #hero .cont-wrapper {
+    position: relative;
+    width: 100%;
+    top: 90px;
+    margin-bottom: 130px; }
+  #hero .intro {
+    padding: 30px;
+    color: #fff;
+    margin: 0 -30px 40px -30px;
+    position: relative;
+    background-color: rgba(143, 197, 99, 0.5); }
+    #hero .intro p:last-child {
+      margin-bottom: 10px; }
+  #hero .cta {
+    background-color: rgba(143, 197, 99, 0.85);
+    min-height: 180px;
+    margin-bottom: 0px;
+    padding: 60px 30px; }
+  #hero h2 {
+    font-size: 88px;
+    line-height: 98px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 1px 2px 2px #0b1223; }
+  #hero p {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    margin-bottom: 30px; }
+  #hero h3 {
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-shadow: 1px 2px 2px rgba(11, 18, 35, 0.3);
+    color: #fff; }
+
+.cta-button {
+  color: #fff;
+  background-color: #5c8d35;
+  font-size: 24px;
+  padding: 15px 10px;
+  font-weight: 700;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; }
+  .cta-button:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #2c4319; }
+
+#intro-strip {
+  background-color: rgba(61, 80, 95, 0.9);
+  padding: 20px 0;
+  text-align: center;
+  -moz-box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3); }
+  #intro-strip h2 {
+    color: #fff; }
+  #intro-strip p {
+    font-size: 1.5em;
+    color: #fff; }
+
+/* ================== WHAT IS PCAMP =======================*/
+#what_is_pcamp {
+  background: #f8f8f8;
+  /*border-top:30px solid $color-green;*/
+  border-bottom: 1px solid #ccc;
+  padding-top: 40px;
+  padding-bottom: 80px; }
+  #what_is_pcamp .caption {
+    padding: 5px;
+    color: #999;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    text-align: center; }
+  #what_is_pcamp h4 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 6px;
+    margin-top: 0px; }
+  #what_is_pcamp h3 {
+    margin-top: 0px;
+    margin-bottom: 6px; }
+
+/* ====================== WHY PCAMP ========================= */
+#why {
+  padding: 60px 0 80px 0; }
+  #why h2 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 40px;
+    line-height: 60px; }
+  #why h3 {
+    margin-bottom: 8px; }
+  #why p {
+    margin-bottom: 10px; }
+
+/* ======= PARALLAX SECTION =========== */
+#parallax {
+  background: url(../images/sticker-board-g2.jpg) no-repeat 50% 0 fixed;
+  background-size: cover;
+  height: 350px; }
+
+#parallax, #testimonial {
+  position: relative;
+  width: 100%; }
+  #parallax h2, #parallax p, #parallax a, #testimonial h2, #testimonial p, #testimonial a {
+    color: #fff;
+    text-align: left;
+    text-shadow: 0px 1px 1px #141e0b;
+    margin-bottom: 20px; }
+  #parallax h2, #testimonial h2 {
+    margin-top: 120px;
+    font-weight: 700; }
+  #parallax p, #testimonial p {
+    font-size: 1.5em;
+    text-align: right; }
+  #parallax a, #testimonial a {
+    text-decoration: none; }
+    #parallax a:hover, #testimonial a:hover {
+      text-decoration: underline; }
+
+#testimonial {
+  background-color: #8fc563;
+  min-height: 150px; }
+  #testimonial h2 {
+    margin: 20px 0 10px 0;
+    letter-spacing: 1px;
+    text-shadow: 0px 1px 1px #141e0b; }
+
+/* ================= SIGN UP SECTION ======================== */
+/* MailChimp Form Embed Code - Slim - 08/17/2011 */
+#mc_embed_signup form {
+  display: block;
+  position: relative;
+  text-align: left;
+  padding: 10px 0 10px 0;
+  min-height: 60px;
+  margin-top: -15px; }
+
+#mc_embed_signup input {
+  border: 1px solid #999;
+  -webkit-appearance: none; }
+
+#mc_embed_signup input:focus {
+  border-color: #333; }
+
+#mc_embed_signup .small-meta {
+  font-size: 11px; }
+
+#mc_embed_signup .nowrap {
+  white-space: nowrap; }
+
+#mc_embed_signup .clear {
+  clear: none;
+  display: inline; }
+
+#mc_embed_signup label {
+  display: block;
+  font-size: 16px;
+  padding-bottom: 10px;
+  font-weight: bold; }
+
+#mc_embed_signup input.form-control {
+  float: left;
+  text-indent: 5px;
+  width: 50%;
+  max-width: 400px;
+  min-width: 280px; }
+
+#mc_embed_signup input.btn {
+  float: left;
+  width: 20%;
+  max-width: 150px;
+  margin-left: 10px;
+  min-width: 280px; }
+
+#mc_embed_signup div#mce-responses {
+  float: left;
+  top: -1.4em;
+  padding: 0em .5em 0em .5em;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 5%;
+  clear: both; }
+
+#mc_embed_signup div.response {
+  margin: 1em 0;
+  padding: 1em .5em .5em 0;
+  font-weight: bold;
+  float: left;
+  top: -1.5em;
+  z-index: 1;
+  width: 80%; }
+
+#mc_embed_signup #mce-error-response {
+  display: none; }
+
+#mc_embed_signup #mce-success-response {
+  color: #529214;
+  display: none; }
+
+#mc_embed_signup label.error {
+  display: block;
+  float: none;
+  width: auto;
+  margin-left: 1.05em;
+  text-align: left;
+  padding: .5em 0; }
+
+#cta_banner {
+  background: #8fc563;
+  color: #fff;
+  padding: 30px 0 60px 0;
+  text-align: center; }
+  #cta_banner h2 {
+    color: #fff; }
+
+/* ================= GET INVOLVED ======================== */
+#get_involved {
+  background: #f8f8f8;
+  padding: 40px 0 60px 0;
+  text-align: left;
+  border-bottom: 1px solid #ccc; }
+  #get_involved h2 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 40px;
+    line-height: 60px; }
+  #get_involved h3 {
+    margin-bottom: 8px;
+    text-align: center; }
+  #get_involved p {
+    margin-top: 20px;
+    padding: 0px 30px; }
+  #get_involved h5 {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 17px;
+    margin-bottom: 5px;
+    margin-top: 20px; }
+  #get_involved .img {
+    width: 80%;
+    margin: 0px auto; }
+
+/* ============================= FOOTER =============================== */
+footer {
+  background-color: #222327;
+  text-align: center;
+  padding: 10px 0; }
+  footer p {
+    margin: 10px 0 8px 0;
+    color: #999;
+    line-height: 18px; }
+  footer a {
+    color: #bbb;
+    text-decoration: none; }
+    footer a:hover {
+      color: #ddd; }
+
+/* ==================================== MEDIA QUERIES ==================================== */
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+@media (max-width: 480px) {
+  header {
+    min-height: 50px; }
+    header h1#logo {
+      position: relative;
+      top: 0px;
+      background-size: 100%; }
+    header a.mini-nav {
+      position: relative;
+      top: -8px;
+      /* 	line-height: 0; */ }
+
+  #hero {
+    min-height: 500px !important; }
+    #hero .intro {
+      padding-left: 10px;
+      padding-right: 10px;
+      margin: 20px -15px; }
+    #hero .cta {
+      padding: 0px; }
+    #hero h2 {
+      font-size: 42px;
+      line-height: 42px; }
+    #hero h3 {
+      font-size: 42px;
+      line-height: 42px; }
+    #hero .cont-wrapper {
+      top: 40px; }
+    #hero p {
+      font-size: 26px;
+      line-height: 28px; }
+    #hero #mc_embed_signup input.btn {
+      margin-left: 0px;
+      margin-top: 10px; }
+
+  #why {
+    padding: 20px 0 30px 0; }
+    #why h2 {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 10px; }
+
+  footer p, footer .sn-links {
+    text-align: center; } }
+@media (max-width: 991px) {
+  header a.mini-nav {
+    font-size: 28px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0 8px;
+    border-radius: 5px; }
+  header nav ul {
+    padding: 0;
+    margin-top: 40px;
+    display: none; }
+  header nav ul.nav li {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); }
+    header nav ul.nav li:hover {
+      background: rgba(0, 0, 0, 0.2); }
+    header nav ul.nav li a {
+      display: block;
+      width: 100%; }
+
+  h1 {
+    font-size: 34px;
+    line-height: 38px; }
+
+  h2 {
+    font-size: 28px;
+    line-height: 32px; }
+
+  h3 {
+    font-size: 22px;
+    line-height: 26px; }
+
+  #hero {
+    background-attachment: scroll;
+    background-position-x: -100px;
+    min-height: 600px; }
+    #hero .cont-wrapper {
+      top: 110px; }
+    #hero p.intro {
+      text-align: center; }
+
+  #home {
+    padding-top: 30px; }
+    #home .ipad {
+      top: 140px; } }
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #home .text {
+    top: 0; } }

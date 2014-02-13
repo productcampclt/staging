@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    
+    <meta name="description" {% if page.description %} content="{{ page.description }}" {% else %} content="{{ site.description }}" {% endif %} />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/pcamp-gear.png" type="image/x-icon" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Oxygen' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="stylesheets/beachstrap-styles.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="bootstrap/assets/js/html5shiv.js"></script>
+      <script src="bootstrap/assets/js/respond.min.js"></script>
+    <![endif]-->
+    
+    {% if site.google_analytics %}
+    <!-- google analytics async -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '{{ site.google_analytics.account }}']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    {% endif %}
+  </head>
+ <body data-spy="scroll" data-target="header" data-offset="50">
+
+  <div id="content">
+
+  <header class="header">
+  <div class="container nav">
+    <div class="row">
+      <div class="col-lg-5 col-md-5 col-sm-10 col-xs-9">
+        <a href="#hero" title="Home"><h1 id="logo">ProductCamp CLT</h1></a>
+      </div><!-- end 2 -->
+      <div class="col-sm-2 col-xs-3 visible-sm text-right visible-xs">
+        <a href="#" title="nav" class="mini-nav"><i class="fa fa-reorder"></i></a>
+      </div>
+
+      <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+        <nav id="navigation">
+            <ul class="nav">
+              <li><a href="#what_is_pcamp" title="What is ProductCamp">What is ProductCamp?</a></li>
+              <li><a href="#why" title="Why Attend">Why Attend</a></li>
+              <li><a href="#get_involved" title="Get Involved">Get Involved</a></li>
+            </ul>
+        </nav>
+      </div><!-- end 12 -->
+    </div><!-- end row -->
+  </div><!-- end container -->
+  </header>
+
+  {{ content }}
+
+  </div><!-- end content -->
+
+<!-- ==================== scripts ============================ -->
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+  <script src="bootstrap/assets/js/jquery.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/beachstrap-script.js"></script>
+  <!--<script src="js/jquery.nav.js"></script>-->
+  <script src="js/jquery.scrollTo.js"></script>
+  <script src="js/jquery.localScroll.min.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

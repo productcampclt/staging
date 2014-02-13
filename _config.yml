@@ -1,0 +1,30 @@
+# standard jekyll configuration
+
+permalink: pretty
+exclude: ['Rakefile', 'README.md', 'config.rb']
+markdown: maruku
+excerpt_separator: "{{end_excerpt}}"
+#paginate: 30
+#paginate_path: "blog/page:num"
+#tag_page_dir: tags
+#tag_page_layout: tag_page
+
+
+#lsi: true   uncomment to enable related posts
+
+# configuration required for some pages
+
+domain: www.productcampclt.org
+title: ProductCamp CLT
+author: Chris Sutton
+email: info@productcampclt.org
+description: ProductCamp CLT is the Queen City's only conference specifically for product managers and marketers. 
+
+# feedburner:
+#   id: feedburnerid
+
+google_analytics:
+  account: UA-38441162-2
+
+#disqus:
+#  id: databox
