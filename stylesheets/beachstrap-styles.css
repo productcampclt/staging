@@ -460,11 +460,19 @@ footer a:hover {
 }
 @media (max-width: 991px) {
   header a.mini-nav {
-    font-size: 28px;
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 0 8px;
-    border-radius: 5px;
+    position: relative;
+    padding: 2em;
+    display: block;
+  }
+  header .mini-nav:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    width: 3em;
+    height: 0.5em;
+    background: #8fc563;
+    box-shadow: 0 1em 0 0 #8fc563, 0 2em 0 0 #8fc563;
   }
   header h1#logo {
     width: 420px;
@@ -511,16 +519,19 @@ footer a:hover {
 }
 @media (max-width: 520px) {
   header {
-    min-height: 50px;
+    min-height: 45px;
+    font-size: 9px;
   }
   header h1#logo {
     position: relative;
     top: 0px;
     max-width: 260px;
+    line-height: 45px;
   }
   header a.mini-nav {
     position: relative;
-    top: -8px;
+    top: 0px;
+    padding: 1.8em;
     /* 	line-height: 0; */
   }
 
