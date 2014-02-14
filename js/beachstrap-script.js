@@ -30,7 +30,10 @@ $(document).ready(function() {
 
 
 		$("a.mini-nav").click(function(){
-			$("ul.nav").slideToggle("normal");
+			$("ul.nav li").css("visibility","hidden");
+			$("ul.nav").slideToggle("normal", "linear", function() {
+				$("ul.nav li").css("visibility","visible");
+			});
 			$("ul.nav").addClass("expanded");
 			return false;
 		});
