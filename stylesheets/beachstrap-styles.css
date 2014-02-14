@@ -259,14 +259,11 @@ nav a:hover, nav a.active {
 }
 
 /* ======= PARALLAX SECTION =========== */
-#parallax {
+#parallax, #testimonial {
   background: url(../images/sticker-board-g2.jpg) no-repeat 50% 0 fixed;
   background-size: cover;
-  height: 350px;
-}
-
-#parallax, #testimonial {
   position: relative;
+  height: 350px;
   width: 100%;
 }
 #parallax h2, #parallax p, #parallax a, #testimonial h2, #testimonial p, #testimonial a {
@@ -288,16 +285,6 @@ nav a:hover, nav a.active {
 }
 #parallax a:hover, #testimonial a:hover {
   text-decoration: underline;
-}
-
-#testimonial {
-  background-color: #8fc563;
-  min-height: 150px;
-}
-#testimonial h2 {
-  margin: 20px 0 10px 0;
-  letter-spacing: 1px;
-  text-shadow: 0px 1px 1px #141e0b;
 }
 
 /* ================= SIGN UP SECTION ======================== */
@@ -570,6 +557,18 @@ footer a:hover {
     max-width: 1000px;
   }
 
+  #parallax, #testimonial {
+    height: auto;
+  }
+  #parallax h2, #testimonial h2 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 30px;
+  }
+  #parallax p, #testimonial p {
+    font-size: 17px;
+  }
+
   #why {
     padding: 20px 0 30px 0;
   }
@@ -596,10 +595,20 @@ footer a:hover {
     background-attachment: scroll;
     background-position: right -550px top -50px;
   }
+
+  #parallax, #testimonial {
+    background: url(../images/sticker-board-g2.jpg) no-repeat center center scroll;
+    background-size: cover;
+  }
 }
 @media (device-width: 768px) and (device-height: 1024px) {
   #hero {
     background-attachment: scroll;
     background-position: right -480px top;
+  }
+
+  #parallax, #testimonial {
+    background: url(../images/sticker-board-g2.jpg) no-repeat center center scroll;
+    background-size: cover;
   }
 }

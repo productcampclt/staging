@@ -7,7 +7,7 @@ $(document).ready(function() {
 			// Put together our final background position
 			var coords = '50%' + yPos + 'px';
 			// Move the background
-			$('#foo').css({
+			$('#parallax').css({
 				backgroundPosition: coords
 			});
 		});
