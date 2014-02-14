@@ -30,7 +30,13 @@ $(document).ready(function() {
 
 
 		$("a.mini-nav").click(function(){
-			$("ul.nav").slideToggle("slow");
+			$("ul.nav").slideToggle("normal");
+			$("ul.nav").addClass("expanded");
+			return false;
+		});
+
+		$("ul.nav a").click(function(){
+			$("ul.expanded").slideToggle("fast");
 			return false;
 		});
 
