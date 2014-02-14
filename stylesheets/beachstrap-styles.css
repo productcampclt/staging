@@ -230,6 +230,13 @@ nav a:hover, nav a.active {
   line-height: 1.3em;
   text-align: center;
 }
+#what_is_pcamp .caption a {
+  color: #999;
+}
+#what_is_pcamp .caption a:hover {
+  color: #333;
+  text-decoration: none;
+}
 #what_is_pcamp h4 {
   font-size: 24px;
   font-weight: 300;
@@ -279,10 +286,15 @@ nav a:hover, nav a.active {
   font-size: 1.5em;
   text-align: right;
 }
-#parallax a, #testimonial a {
-  text-decoration: none;
+#parallax p small, #testimonial p small {
+  margin-left: 10px;
+  color: #ddd;
 }
-#parallax a:hover, #testimonial a:hover {
+#parallax p small a, #testimonial p small a {
+  text-decoration: none;
+  color: #ddd;
+}
+#parallax p small a:hover, #testimonial p small a:hover {
   text-decoration: underline;
 }
 
