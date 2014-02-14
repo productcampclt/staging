@@ -118,19 +118,7 @@ form{
 		color: #fff;
 		}
 }
-.sn-links a{
-		color: $color-dark-blue;
-		@include transition(color 0.5s ease);
 
-		&:hover{
-			color: $color-orange;
-		}
-
-	.fa{
-		font-size:32px;
-		margin:5px;
-	}
-}
 
 /* ====================== HEADER ========================= */
 
@@ -147,6 +135,7 @@ header{
 		padding:1px 0;
 		text-indent: -9999px;
 		background: url(../images/pcamp-logo-small.png) no-repeat 0 0;
+
  	}
 
 }
@@ -196,7 +185,6 @@ nav{
 	background-size:cover;
 	background-position: center top;  /* Internet Explorer 7/8 */
 	background-attachment: fixed;
-	/* border-bottom:100px solid rgba($color-green,0.85); */
 
 	.cont-wrapper{
 		position: relative;
@@ -218,7 +206,7 @@ nav{
 		background-color:rgba($color-green,0.85);
 		min-height:180px;
 		margin-bottom:0px;
-		padding:60px 30px;
+		padding:60px 0px;
 	}
 
 
@@ -266,22 +254,6 @@ nav{
 	}
 }
 
-#intro-strip{
-	background-color:transparentize($color-dark-blue,.1);
-	padding:20px 0;
-	text-align:center;
-	-moz-box-shadow: 0 -2px 6px rgba(0.255, 0.255, 0.255, 0.3);
-	-webkit-box-shadow: 0 -2px 6px rgba(0.255, 0.255, 0.255, 0.3);
-	box-shadow: 0 -2px 6px rgba(0.255, 0.255, 0.255, 0.3);
-	h2 {
-		color:#fff;
-	}
-	p {
-		font-size:1.5em;
-		color:#fff;
-	}
-
-}
 
 /* ================== WHAT IS PCAMP =======================*/
 
@@ -387,7 +359,7 @@ nav{
 
 #mc_embed_signup label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold;}
 #mc_embed_signup input.form-control {float:left; text-indent:5px; width:50%; max-width:400px;min-width:280px;}
-#mc_embed_signup input.btn {float:left; width:20%; max-width:150px; margin-left:10px;min-width:280px;}
+#mc_embed_signup input.btn {float:left; width:20%; margin-left:10px;max-width:180px;}
 
 #mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
 #mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
@@ -464,87 +436,38 @@ footer{
 
 /* ==================================== MEDIA QUERIES ==================================== */
 
-/* Extra small devices (phones, up to 480px) */
-/* No media query since this is the default in Bootstrap */
-
-@media (max-width: 480px) {
-	header{
-		min-height:50px;
-
-		h1#logo{
-			position: relative;
-			top:0px;
-			background-size: 100%;
+@media (max-width:1200px) {
+	
+	header {
+		h1#logo {
+			background-size:100%;
 		}
-
-		a.mini-nav{
-			position: relative;
-			top:-8px;
-		/* 	line-height: 0; */
-		}
-	}
-
-	#hero{
-		min-height:500px !important;
-		.intro {
-			padding-left:10px;
-			padding-right:10px;
-			margin:20px -15px;
-		}
-		.cta {
-			padding:0px;
-		}
-		h2 { 
-			font-size:42px;
-			line-height:42px;
-		}
-		h3 {
-			font-size:42px;
-			line-height:42px;
-		}
-		.cont-wrapper{
-			top:40px;
-		}
-
-		p{
-			font-size:26px;
-			line-height:28px;
-		}
-		#mc_embed_signup input.btn {margin-left:0px;margin-top:10px;}
-
-	}
-
-	#why {
-		padding: 20px 0 30px 0;
-		h2 {
-			font-size:36px;
-			line-height:36px;
-			margin-bottom:10px;
-		}
-	}
-
-	footer p, footer .sn-links{
-		text-align: center;
 	}
 
 }
+
 
 @media (max-width:991px) {
 
-header{
-	a.mini-nav{
-		font-size: 28px;
-		color: #fff;
-		border:1px solid rgba(255, 255, 255, 0.3);
-		padding:0 8px;
-		border-radius:5px;
+	header{
+		a.mini-nav{
+			font-size: 28px;
+			color: #fff;
+			border:1px solid rgba(255, 255, 255, 0.3);
+			padding:0 8px;
+			border-radius:5px;
+		}
+		h1#logo {
+			width:420px;
+		}
 	}
 
-nav ul{
-	padding: 0;
-	margin-top:40px;
-	display: none;
-}
+	nav ul{
+		padding: 0;
+		margin-top:40px;
+		display: none;
+	}
+	
 	nav ul.nav {
 		li{
 			display: block;
@@ -565,55 +488,118 @@ nav ul{
 		}
 	}
 
-}
-
-	h1{
-			font-size:34px;
-			line-height:38px;
-		}
-
-		h2{
-			font-size: 28px;
-			line-height:32px;
-			}
-
-		h3{
-			font-size: 22px;
-			line-height:26px;
-		}
-
 	#hero {
-    background-attachment: scroll;
-    background-position-x: -100px;
+    	 h2 {
+    	 	font-size:60px;
+    	 	line-height:68px;
+    	 }
+		
+		.cta {
+			padding:30px 0px;
+			margin-top:20px;
+		}
 
-	 min-height: 600px;
 		 .cont-wrapper{
 			top:110px;
-		}
-
-    p.intro{
-				text-align: center;
-				}
-		}
-
-  #home {
-  	padding-top:30px;
-
-	  .ipad{
-		  	top:140px;
-	  }
-
-	  .text{
-	  }
-  }
-}
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-	#home{
-		.text{
-			top:0;
 		}
 	}
 }
 
+@media (max-width: 768px) {
+	
+	#hero {
+		background: url("../images/clt-skyline-cropped.jpg") no-repeat fixed right -380px top / cover;
+	}
+
+}
+
+
+@media (max-width: 520px) {
+
+header{
+		min-height:50px;
+
+		h1#logo{
+			position: relative;
+			top:0px;
+			max-width:260px;
+		}
+
+		a.mini-nav{
+			position: relative;
+			top:-8px;
+		/* 	line-height: 0; */
+		}
+	}
+
+	#hero{
+		min-height:500px !important;
+		.intro {
+			padding-left:10px;
+			padding-right:10px;
+			margin:20px -15px;
+		}
+		
+		h2 { 
+			font-size:42px;
+			line-height:42px;
+		}
+		h3 {
+			font-size:42px;
+			line-height:42px;
+		}
+		.cont-wrapper{
+			top:60px;
+			margin-bottom:60px;
+		}
+
+		p{
+			font-size:24px;
+			line-height:28px;
+		}
+		
+		.cta {
+			padding:0px;
+			text-align:center;
+			h3 {
+				font-size:29px;
+				line-height:20px;
+				text-align:center;
+			}
+		}
+
+		#mc_embed_signup input {
+			width:100%;
+			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+		}
+		
+		#mc_embed_signup input.btn {
+			margin:10px 0 20px 0px;
+			max-width:1000px;
+		}
+		
+}
+	#why {
+		padding: 20px 0 30px 0;
+		h2 {
+			font-size:36px;
+			line-height:36px;
+			margin-bottom:10px;
+		}
+	}
+
+	footer p {
+		text-align: center;
+	}	
+
+}
+
+@media (max-width: 360px) {
+	header {h1#logo{
+		position: relative;
+		top:0px;
+		max-width:240px;
+	}}
+}
