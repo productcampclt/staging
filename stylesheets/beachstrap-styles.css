@@ -42,6 +42,7 @@ h1 {
 h2 {
   font-size: 38px;
   line-height: 44px;
+  margin-bottom: 16px;
 }
 
 h3 {
@@ -218,7 +219,6 @@ nav a:hover, nav a.active {
 /* ================== WHAT IS PCAMP =======================*/
 #what_is_pcamp {
   background: #f8f8f8;
-  /*border-top:30px solid $color-green;*/
   border-bottom: 1px solid #ccc;
   padding-top: 40px;
   padding-bottom: 80px;
@@ -237,7 +237,6 @@ nav a:hover, nav a.active {
   margin-top: 0px;
 }
 #what_is_pcamp h3 {
-  margin-top: 0px;
   margin-bottom: 6px;
 }
 
@@ -569,12 +568,12 @@ footer a:hover {
     font-size: 17px;
   }
 
-  #why {
+  #why, #get_involved, #what_is_pcamp {
     padding: 20px 0 30px 0;
   }
-  #why h2 {
-    font-size: 36px;
-    line-height: 36px;
+  #why h2, #get_involved h2, #what_is_pcamp h2 {
+    font-size: 46px;
+    line-height: 42px;
     margin-bottom: 10px;
   }
 
