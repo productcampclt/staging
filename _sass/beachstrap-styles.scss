@@ -603,3 +603,17 @@ header{
 		max-width:240px;
 	}}
 }
+
+/* iOS doesn't support background-attachment:fixed, so target iphone and ipad dimensions for fix. */
+@media (max-device-width: 480px){
+	#hero {
+		background-attachment:scroll;
+		background-position:right -550px top -50px;
+	}
+} 
+@media (device-width: 768px) and (device-height: 1024px) {
+	#hero {
+		background-attachment:scroll;
+		background-position:right -480px top;
+	}
+}
