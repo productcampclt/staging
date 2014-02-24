@@ -63,7 +63,7 @@ p {
   -moz-transition: background 0.5s ease;
   -o-transition: background 0.5s ease;
   transition: background 0.5s ease;
-  padding: 20px;
+  height: 40px;
   box-sizing: border-box;
 }
 .form-control:focus {
