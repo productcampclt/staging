@@ -98,6 +98,10 @@ p {
   color: #fff;
 }
 
+.modal-dialog {
+  margin-top: 15%;
+}
+
 /* ====================== HEADER ========================= */
 header {
   background-color: rgba(21, 26, 40, 0.8);
