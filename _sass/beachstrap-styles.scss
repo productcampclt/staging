@@ -118,6 +118,17 @@ form{
 		}
 }
 
+.btn-eventbrite {
+	text-align:center;
+	padding:20px 30px;
+	margin-top:-5px;
+	font-family:'Rokkitt', serif;
+	display:block;
+	width:100%;
+	font-size: 42px;
+	&:hover { text-decoration:none;}
+}
+
 .modal-dialog {
     margin-top: 15%;
 }
@@ -517,11 +528,13 @@ footer{
 		.cta {
 			padding:30px 0px;
 			margin-top:20px;
+			text-align:center;
 		}
 
 		 .cont-wrapper{
 			top:110px;
 		}
+		.btn-eventbrite{margin-top:20px;}
 	}
 }
 
@@ -595,6 +608,14 @@ footer{
 			}
 		}
 
+	.btn-eventbrite {
+		padding:15px 30px;
+		margin-top:25px;
+		margin-bottom:15px;
+		font-size: 28px;
+	}
+
+
 		#mc_embed_signup input {
 			width:100%;
 			display: block;
@@ -642,6 +663,8 @@ footer{
 		top:0px;
 		max-width:240px;
 	}}
+
+
 }
 
 /* iOS doesn't support background-attachment:fixed, so target iphone and ipad dimensions for fix. */

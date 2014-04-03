@@ -98,6 +98,19 @@ p {
   color: #fff;
 }
 
+.btn-eventbrite {
+  text-align: center;
+  padding: 20px 30px;
+  margin-top: -5px;
+  font-family: 'Rokkitt', serif;
+  display: block;
+  width: 100%;
+  font-size: 42px;
+}
+.btn-eventbrite:hover {
+  text-decoration: none;
+}
+
 .modal-dialog {
   margin-top: 15%;
 }
@@ -518,9 +531,13 @@ footer a:hover {
   #hero .cta {
     padding: 30px 0px;
     margin-top: 20px;
+    text-align: center;
   }
   #hero .cont-wrapper {
     top: 110px;
+  }
+  #hero .btn-eventbrite {
+    margin-top: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -581,6 +598,12 @@ footer a:hover {
     font-size: 29px;
     line-height: 20px;
     text-align: center;
+  }
+  #hero .btn-eventbrite {
+    padding: 15px 30px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 28px;
   }
   #hero #mc_embed_signup input {
     width: 100%;
