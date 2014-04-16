@@ -40,9 +40,8 @@ $(document).ready(function() {
 
 		$("ul.nav a").click(function(){
 			$("ul.expanded").slideToggle("fast");
-			return false;
 		});
 
-		$.localScroll({offset:-50});
+
 
 });
