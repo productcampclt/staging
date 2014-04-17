@@ -269,6 +269,9 @@ nav a:hover, nav a.active {
 .sponsors p {
   font-size: 1.2em;
 }
+.sponsors h1 {
+  line-height: 42px;
+}
 
 /* ================== WHAT IS PCAMP =======================*/
 .spread {
@@ -734,18 +737,33 @@ footer .social-icons {
     font-size: 17px;
   }
 
-  #why, #get_involved, #what_is_pcamp {
+  .why, #get_involved, #what_is_pcamp {
     padding: 20px 0 30px 0;
   }
-  #why h2, #get_involved h2, #what_is_pcamp h2 {
+  .why h2, #get_involved h2, #what_is_pcamp h2 {
     font-size: 46px;
     line-height: 42px;
     margin-bottom: 10px;
+    text-align: left;
+  }
+  .why .container, #get_involved .container, #what_is_pcamp .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .sponsors {
+    top: 60px;
+    padding-bottom: 80px;
   }
 
   #what_is_pcamp {
     top: 20px;
     padding-bottom: 20px;
+  }
+
+  #cta_banner h1 {
+    font-size: 38px;
+    line-height: 42px;
   }
 }
 @media (max-width: 360px) {
