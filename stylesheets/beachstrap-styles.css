@@ -26,7 +26,7 @@ body {
   color: #3d505f;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h5 {
   font-family: 'Rokkitt', serif;
   margin-bottom: 16px;
   color: #3d505f;
@@ -98,11 +98,24 @@ p {
   color: #fff;
 }
 
+.btn-lg {
+  text-align: center;
+  padding: 10px 20px;
+  font-family: 'Rokkitt',serif;
+  display: block;
+  width: 100%;
+  font-size: 32px;
+}
+.btn-lg:hover {
+  text-decoration: none;
+}
+
 .btn-eventbrite {
   text-align: center;
   padding: 20px 30px;
   margin-top: -5px;
   font-family: 'Rokkitt', serif;
+  font-weight: 400;
   display: block;
   width: 100%;
   font-size: 42px;
@@ -113,6 +126,10 @@ p {
 
 .modal-dialog {
   margin-top: 15%;
+}
+
+.gray {
+  background-color: #f8f8f8;
 }
 
 /* ====================== HEADER ========================= */
@@ -239,12 +256,52 @@ nav a:hover, nav a.active {
   background: #2c4319;
 }
 
+/* ======= SPONSORS ===========*/
+.sponsors {
+  position: relative;
+  top: 100px;
+  padding-bottom: 200px;
+}
+.sponsors .contact {
+  margin-top: 80px;
+  text-align: center;
+}
+.sponsors p {
+  font-size: 1.2em;
+}
+
 /* ================== WHAT IS PCAMP =======================*/
-#what_is_pcamp {
+.spread {
+  padding: 60px 0;
+}
+.spread h3 {
+  margin-bottom: 6px;
+}
+.spread ul {
+  font-size: 1.2em;
+}
+
+.when {
+  text-align: center;
+}
+.when h1 {
+  font-size: 4em;
+}
+.when h5 {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.gray {
   background: #f8f8f8;
-  border-bottom: 1px solid #ccc;
-  padding-top: 40px;
-  padding-bottom: 80px;
+}
+
+#what_is_pcamp {
+  position: relative;
+  top: 60px;
+  padding-bottom: 60px;
 }
 #what_is_pcamp .caption {
   padding: 5px;
@@ -269,21 +326,28 @@ nav a:hover, nav a.active {
 #what_is_pcamp h3 {
   margin-bottom: 6px;
 }
+#what_is_pcamp .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#what_is_pcamp ul {
+  font-size: 15px;
+}
 
 /* ====================== WHY PCAMP ========================= */
-#why {
+.why {
   padding: 60px 0 80px 0;
 }
-#why h2 {
+.why h2 {
   text-align: center;
   font-size: 60px;
   margin-bottom: 40px;
   line-height: 60px;
 }
-#why h3 {
+.why h3 {
   margin-bottom: 8px;
 }
-#why p {
+.why p {
   margin-bottom: 10px;
 }
 
@@ -417,10 +481,9 @@ nav a:hover, nav a.active {
 #cta_banner {
   background: #8fc563;
   color: #fff;
-  padding: 30px 0 60px 0;
-  text-align: center;
+  padding: 60px 0 60px 0;
 }
-#cta_banner h2 {
+#cta_banner h1, #cta_banner h2, #cta_banner h3 {
   color: #fff;
 }
 
@@ -458,21 +521,55 @@ nav a:hover, nav a.active {
 
 /* ============================= FOOTER =============================== */
 footer {
-  background-color: #222327;
-  text-align: center;
-  padding: 10px 0;
+  background-color: #293640;
+  text-align: left;
+  padding: 60px 0;
+  color: #e6e6e6;
 }
 footer p {
   margin: 10px 0 8px 0;
-  color: #999;
+  color: #e6e6e6;
   line-height: 18px;
 }
 footer a {
-  color: #bbb;
+  color: #fff;
   text-decoration: none;
 }
 footer a:hover {
-  color: #ddd;
+  color: #eee;
+}
+footer h3 {
+  color: #e6e6e6;
+  margin-bottom: 12px;
+}
+footer a.meetup {
+  display: block;
+  text-indent: -9999px;
+  position: relative;
+  top: 3px;
+  width: 46px;
+  height: 46px;
+  background: url(/images/meetup_icon.svg);
+  background-size: 46px 46px;
+}
+footer a.meetup:hover {
+  background: url(/images/meetup_icon_hover.svg);
+  width: 46px;
+  height: 46px;
+  background-size: 46px 46px;
+}
+footer .copyright {
+  margin-top: 20px;
+  color: #999;
+}
+footer .copyright a {
+  color: #999;
+}
+footer .logo {
+  margin-bottom: 30px;
+}
+footer .social-icons {
+  font-size: 4em;
 }
 
 /* ==================================== MEDIA QUERIES ==================================== */
