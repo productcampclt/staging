@@ -307,7 +307,8 @@ margin-top:80px;
 /* ================== WHAT IS PCAMP =======================*/
 
 .spread { 
-	padding:60px 0;
+	padding-top:60px;
+	padding-bottom:60px;
 	h3 {
 		margin-bottom:6px;
 	}
@@ -631,12 +632,20 @@ footer{
 		}
 		.btn-eventbrite{margin-top:20px;}
 	}
+
+	#cta_banner {
+		text-align:center;	
+	}
 }
 
 @media (max-width: 768px) {
 	
 	#hero {
 		background: url("../images/clt-skyline-cropped.jpg") no-repeat fixed right -380px top / cover;
+	}
+
+	#cta_banner {
+		padding:20px 0 40px 0;
 	}
 
 }
@@ -738,6 +747,7 @@ footer{
 	}
 
 	#why, #get_involved, #what_is_pcamp {
+		
 		padding: 20px 0 30px 0;
 		h2 {
 			font-size:46px;
@@ -746,9 +756,10 @@ footer{
 		}
 	}
 
-	footer p {
-		text-align: center;
-	}	
+	#what_is_pcamp {
+		top:20px;
+		padding-bottom:20px;
+	}
 
 }
 
