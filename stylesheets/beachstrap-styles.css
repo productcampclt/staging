@@ -132,10 +132,20 @@ p {
   background-color: #f8f8f8;
 }
 
+a.meetup {
+  display: block;
+  text-indent: -9999px;
+  position: relative;
+  background: url(/images/meetup_icon.svg);
+}
+a.meetup:hover {
+  background: url(/images/meetup_icon_hover.svg);
+}
+
 /* ====================== HEADER ========================= */
 header {
   background-color: rgba(21, 26, 40, 0.8);
-  min-height: 86px;
+  min-height: 96px;
   padding: 15px 0 0 0;
   position: fixed;
   z-index: 200;
@@ -147,6 +157,8 @@ header h1#logo {
   padding: 1px 0;
   text-indent: -9999px;
   background: url(../images/ProductCamp-Logo-Small.png) no-repeat 0 0;
+  top: 8px;
+  position: relative;
 }
 
 nav ul.nav {
@@ -176,6 +188,37 @@ nav a {
 nav a:hover, nav a.active {
   color: #8fc563;
   text-decoration: none;
+}
+
+.social-header {
+  background-color: rgba(81, 106, 126, 0.8);
+  padding: 0 10px;
+  margin-top: -15px;
+  margin-bottom: 2px;
+  font-size: 20px;
+  height: 30px;
+  color: #fff;
+}
+.social-header a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300 !important;
+}
+.social-header a:hover {
+  color: #8fc563;
+}
+.social-header a.meetup {
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background: url(/images/meetup_icon.svg);
+  background-size: 16px 16px;
+}
+.social-header a.meetup:hover {
+  background: url(/images/meetup_icon_hover.svg);
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
 }
 
 /* ====================== HERO ========================= */
@@ -282,13 +325,14 @@ nav a:hover, nav a.active {
 
 .event_headline {
   text-align: center;
-  padding: 120px 0 60px 0;
+  padding: 140px 0 60px 0;
   background-color: #8fc563;
   color: #fff;
 }
 .event_headline h1 {
   font-size: 3em;
   font-weight: 400;
+  line-height: 32px;
 }
 .event_headline h2 {
   font-size: 4em;
@@ -296,6 +340,9 @@ nav a:hover, nav a.active {
 }
 .event_headline h2 span {
   font-weight: 400;
+}
+.event_headline .break {
+  line-height: 8px;
 }
 
 .event {
@@ -602,17 +649,12 @@ footer h3 {
   margin-bottom: 12px;
 }
 footer a.meetup {
-  display: block;
-  text-indent: -9999px;
-  position: relative;
   top: 3px;
   width: 46px;
   height: 46px;
-  background: url(/images/meetup_icon.svg);
   background-size: 46px 46px;
 }
 footer a.meetup:hover {
-  background: url(/images/meetup_icon_hover.svg);
   width: 46px;
   height: 46px;
   background-size: 46px 46px;
@@ -641,8 +683,12 @@ footer .social-icons a:hover {
   }
 }
 @media (max-width: 991px) {
+  header {
+    min-height: 86px;
+  }
   header a.mini-nav {
     position: relative;
+    top: 6px;
     padding: 2em;
     display: block;
   }
@@ -658,6 +704,8 @@ footer .social-icons a:hover {
   }
   header h1#logo {
     width: 420px;
+    top: 0px;
+    position: relative;
   }
 
   nav ul {
@@ -725,7 +773,7 @@ footer .social-icons a:hover {
   }
   header a.mini-nav {
     position: relative;
-    top: 0px;
+    top: 2px;
     padding: 1.8em;
     /* 	line-height: 0; */
   }
@@ -822,6 +870,20 @@ footer .social-icons a:hover {
   #cta_banner h1 {
     font-size: 38px;
     line-height: 42px;
+  }
+
+  .event_headline {
+    padding: 80px 0 30px 0;
+  }
+  .event_headline h1 {
+    font-size: 2.4em;
+  }
+  .event_headline h2 {
+    font-size: 2.4em;
+    line-height: 32px;
+  }
+  .event_headline h2 span {
+    font-size: .8em;
   }
 }
 @media (max-width: 360px) {
