@@ -135,17 +135,18 @@ p {
 /* ====================== HEADER ========================= */
 header {
   background-color: rgba(21, 26, 40, 0.8);
-  min-height: 80px;
+  min-height: 86px;
   padding: 15px 0 0 0;
   position: fixed;
   z-index: 200;
   width: 100%;
 }
 header h1#logo {
+  line-height: 58px;
   margin: 0;
   padding: 1px 0;
   text-indent: -9999px;
-  background: url(../images/pcamp-logo-small.png) no-repeat 0 0;
+  background: url(../images/ProductCamp-Logo-Small.png) no-repeat 0 0;
 }
 
 nav ul.nav {
@@ -296,6 +297,12 @@ nav a:hover, nav a.active {
   font-size: 1.5em;
   text-transform: uppercase;
   margin-bottom: 6px;
+}
+.when a {
+  color: #3d505f;
+}
+.when a:hover {
+  color: #8fc563;
 }
 
 .gray {
@@ -574,6 +581,9 @@ footer .logo {
 }
 footer .social-icons {
   font-size: 4em;
+}
+footer .social-icons a:hover {
+  color: #8fc563;
 }
 
 /* ==================================== MEDIA QUERIES ==================================== */

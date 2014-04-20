@@ -152,17 +152,18 @@ form{
 
 header{
 	background-color: rgba( 21.255, 26.255, 40.255, 0.8);
-	min-height: 80px;
+	min-height: 86px;
 	padding:15px 0 0 0;
 	position: fixed;
 	z-index: 200;
 	width:100%;
 
 		h1#logo{
+		line-height:58px;
 		margin:0;
 		padding:1px 0;
 		text-indent: -9999px;
-		background: url(../images/pcamp-logo-small.png) no-repeat 0 0;
+		background: url(../images/ProductCamp-Logo-Small.png) no-repeat 0 0;
 
  	}
 
@@ -329,6 +330,8 @@ nav{
 		text-transform:uppercase;
 		margin-bottom:6px;
 	}
+	a {color:$color-dark-blue;
+	&:hover {color:$color-green;}}
 }
 
 .gray { background: #f8f8f8;}
@@ -546,6 +549,7 @@ footer{
 
 	.social-icons {
 	font-size:4em;
+	a {&:hover {color:$color-green;}}
 	}
 
 }
